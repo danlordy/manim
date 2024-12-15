@@ -197,5 +197,28 @@ html_js_files = ["responsiveSvg.js"]
 
 graphviz_output_format = "svg"
 
-# Deshabilitar renderizado de tablas si hay problemas
-html_table_style = ''
+
+
+# -- LaTeX output settings --------------------------------------------------
+
+latex_elements = {
+    'preamble': r'''
+        \usepackage{amsmath}
+        \usepackage{amsfonts}
+        \usepackage{amssymb}
+        \usepackage{graphicx}
+        \usepackage{hyperref}
+        \usepackage{listings}
+    ''',  # Preámbulo LaTeX para cargar paquetes adicionales
+    'figure_align': 'htbp',  # Alineación de las figuras
+    'fontpkg': r'''
+        \usepackage{times}
+    ''',  # Configuración de la fuente (por ejemplo, Times)
+    'tableofcontents': r'\tableofcontents',  # Cómo se genera el índice
+    'sphinxsetup': 'hskip=1em',  # Configuración de espacios en el LaTeX
+    'maketitle': r'\maketitle',  # Comando para hacer el título
+    'tocdepth': 2,  # Profundidad del índice
+    'tocindent': '0em',  # Indentación del índice
+    'date': r'\today',  # Fecha de la compilación
+    'releasename': 'v1.0',  # Nombre de la versión
+}
