@@ -202,23 +202,13 @@ graphviz_output_format = "svg"
 # -- LaTeX output settings --------------------------------------------------
 
 latex_elements = {
-    'preamble': r'''
-        \usepackage{amsmath}
-        \usepackage{amsfonts}
-        \usepackage{amssymb}
-        \usepackage{graphicx}
-        \usepackage{hyperref}
-        \usepackage{listings}
-    ''',  # Preámbulo LaTeX para cargar paquetes adicionales
-    'figure_align': 'htbp',  # Alineación de las figuras
-    'fontpkg': r'''
-        \usepackage{times}
-    ''',  # Configuración de la fuente (por ejemplo, Times)
-    'tableofcontents': r'\tableofcontents',  # Cómo se genera el índice
-    'sphinxsetup': 'hskip=1em',  # Configuración de espacios en el LaTeX
-    'maketitle': r'\maketitle',  # Comando para hacer el título
-    'tocdepth': 2,  # Profundidad del índice
-    'tocindent': '0em',  # Indentación del índice
-    'date': r'\today',  # Fecha de la compilación
-    'releasename': 'v1.0',  # Nombre de la versión
+    'maketitle': '',  # Desactiva la generación del título
+    'tableofcontents': '',  # No genera tabla de contenido (índice)
+    'sphinxsetup': 'hskip=1em',  # Ajustes adicionales de espacio si es necesario
+    'tocdepth': 0,  # No se genera tabla de contenido
+    'tocindent': '0em',  # Indentación del índice (desactivado)
+    'date': '',  # Desactiva la fecha
+    'releasename': '',  # Desactiva la versión
+    'fontpkg': '',  # Desactiva los paquetes de fuentes personalizados
+    'figure_align': '',  # Desactiva la alineación de las figuras
 }
