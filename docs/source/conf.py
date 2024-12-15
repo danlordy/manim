@@ -196,3 +196,6 @@ inheritance_edge_attrs = {
 html_js_files = ["responsiveSvg.js"]
 
 graphviz_output_format = "svg"
+
+# Deshabilitar renderizado de tablas si hay problemas
+html_table_style = ''
